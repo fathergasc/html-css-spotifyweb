@@ -34,6 +34,22 @@ html {
     background-color: cadetblue;
 }
 
+#top-nav {
+    background-color: beige;
+    height: 10vh;
+}
+
+.home-row {
+    background-color: yellowgreen;
+    border: 1px dotted black;
+}
+
+.debug .box {
+    height: 150px;
+    background-color: coral;
+}
+
+
 
 /* COMMON RULES */
 
@@ -103,6 +119,26 @@ main {
     width: 100%;
     height: 100%;
     overflow: auto;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+#top-nav {
+    width: 100%;
+}
+
+.home-row {
+    width: 100%; 
+}
+
+.home-row-container {
+    margin-right: -0.3rem;
+    margin-left: -0.3rem;
+}
+
+.box {
+    width: calc(100% / 2 - 0.4rem);
+    margin: 0.3rem 0.2rem;
 }
 
 
@@ -123,13 +159,20 @@ main {
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 576px) {
-
+    #left-nav{
+        width: 150px;
+    }
 }
 
 @media screen and (min-width: 768px) {
-
+    
+    .box {
+        width: calc(100% / 4 - 0.4rem);
+    }
 }
 
 @media screen and (min-width: 992px) {
-
+    .box {
+        width: calc(100% / 6 - 0.4rem);
+    }
 }
