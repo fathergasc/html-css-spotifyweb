@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    
+}
+
+html {
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+/* DEBUG RULES */
+
+.debug main {
+    background-color: aqua;
+}
+
+#footer {
+    background-color: red;
+}
+
+#left-nav {
+    background-color: blue;
+}
+
+#calltoaction {
+    background-color: blueviolet;
+}
+
+#home {
+    background-color: cadetblue;
+}
+
+
+/* COMMON RULES */
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+
+/* MAIN */
+
+main {
+    height: calc(100vh - 70px);
+}
+
+#left-nav {
+    width: 40px;
+    height: 100%;
+}
+
+#main-content {
+    width: calc(100% - 40px);
+    height: calc(100% - 70px);
+}
+
+#calltoaction {
+    width: 100%;
+    height: 70px;
+}
+
+#home {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+
+
+
+
+
+/* FOOTER */
+
+#footer {
+    height: 70px;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 576px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+
+}
