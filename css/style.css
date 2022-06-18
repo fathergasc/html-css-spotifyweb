@@ -5,7 +5,11 @@
 }
 
 :root {
-    
+    --primary-color: #080b12;
+    --secondary-color: #141922;
+    --tertiary-color: #282828;
+    --gray-light: #d2d2d2;
+    --gray-text: #818388;
 }
 
 html {
@@ -93,8 +97,27 @@ html {
     flex-wrap: wrap;
 }
 
+a {
+    text-decoration: none;
+}
+
+.white-txt {
+    color: white;
+}
+
 
 /* MAIN */
+
+/* CALL TO ACTION */
+
+.button {
+    border: 1px solid white;
+    padding: 0.6rem 2rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+    margin-right: 0.5rem;
+    font-size: 13px;
+}
 
 main {
     height: calc(100vh - 70px);
@@ -113,6 +136,7 @@ main {
 #calltoaction {
     width: 100%;
     height: 70px;
+    background-color: var(--primary-color);
 }
 
 #home {
