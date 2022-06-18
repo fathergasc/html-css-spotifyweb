@@ -18,9 +18,26 @@ html {
 
 /* DEBUG RULES */
 
+
+/* deactivated rules
+
+#calltoaction {
+    background-color: blueviolet;
+}
+
+#top-nav {
+    background-color: beige;
+}
+
 .debug main {
     background-color: aqua;
 }
+
+#home {
+    background-color: cadetblue;
+}
+*/
+
 
 #footer {
     background-color: red;
@@ -30,18 +47,7 @@ html {
     background-color: blue;
 }
 
-#calltoaction {
-    background-color: blueviolet;
-}
 
-#home {
-    background-color: cadetblue;
-}
-
-#top-nav {
-    background-color: beige;
-    height: 10vh;
-}
 
 .home-row {
     background-color: yellowgreen;
@@ -93,6 +99,10 @@ html {
     align-items: flex-start;
 }
 
+.align-between {
+    align-content: space-between;
+}
+
 .wrap {
     flex-wrap: wrap;
 }
@@ -101,16 +111,29 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
 .white-txt {
     color: white;
+}
+
+.gray-txt {
+    color: var(--gray-text);
 }
 
 
 /* MAIN */
 
+main {
+    height: calc(100vh - 70px);
+    background-color: var(--secondary-color);
+}
+
 /* CALL TO ACTION */
 
-.button {
+#button {
     border: 1px solid white;
     padding: 0.6rem 2rem;
     border-radius: 30px;
@@ -119,9 +142,56 @@ a {
     font-size: 13px;
 }
 
-main {
-    height: calc(100vh - 70px);
+#button:hover {
+    transform: scale(1.05);
 }
+
+/* TOP NAV */
+
+#top-nav {
+    width: 100%;
+    background-color: var(--secondary-color);
+    padding: 2px;
+}
+
+#top-nav ul li a{
+    color: var(--gray-text);
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+#top-nav ul li a:hover {
+    color: white;
+}
+
+#top-nav ul li {
+    margin: 10px;
+}
+
+.first-nav {
+    position: relative;
+}
+
+.first-nav:hover:after {
+    content: "";
+    width: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 2.1px;
+    background-color: #b9ff30;
+    transform: translate(-50%);
+}
+
+
+
+
+
+
+
+
 
 #left-nav {
     width: 40px;
@@ -147,9 +217,7 @@ main {
     padding: 0 1rem;
 }
 
-#top-nav {
-    width: 100%;
-}
+
 
 .home-row {
     width: 100%; 
