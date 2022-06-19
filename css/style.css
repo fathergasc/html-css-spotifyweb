@@ -36,6 +36,15 @@ html {
 #home {
     background-color: cadetblue;
 }
+
+.debug .box {
+    background-color: coral;
+}
+
+.home-row {
+    background-color: yellowgreen;
+    border: 1px dotted black;
+}
 */
 
 
@@ -47,17 +56,6 @@ html {
     background-color: blue;
 }
 
-
-
-.home-row {
-    background-color: yellowgreen;
-    border: 1px dotted black;
-}
-
-.debug .box {
-    height: 150px;
-    background-color: coral;
-}
 
 
 
@@ -123,6 +121,17 @@ ul {
     color: var(--gray-text);
 }
 
+.bold {
+    font-weight: bold;
+}
+
+.m-top {
+    margin-top: 0.4rem;
+}
+
+.circle {
+    border-radius: 50%;
+}
 
 /* MAIN */
 
@@ -131,7 +140,19 @@ main {
     background-color: var(--secondary-color);
 }
 
+#main-content {
+    width: calc(100% - 40px);
+    height: calc(100% - 70px);
+}
+
+
 /* CALL TO ACTION */
+
+#calltoaction {
+    width: 100%;
+    height: 70px;
+    background-color: var(--primary-color);
+}
 
 #button {
     border: 1px solid white;
@@ -145,6 +166,17 @@ main {
 #button:hover {
     transform: scale(1.05);
 }
+
+/* HOME */
+
+#home {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin: auto;
+    padding: 0 1rem;
+}
+
 
 /* TOP NAV */
 
@@ -186,6 +218,54 @@ main {
 }
 
 
+/* HOME-ROW */
+
+.home-row-container {
+    margin-right: -0.3rem;
+    margin-left: -0.3rem;
+    padding: 1rem;
+}
+
+.home-row {
+    width: 100%; 
+}
+
+.rows-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 1rem 0.2rem;
+    color: white;
+}
+
+.box {
+    width: calc(100% / 2 - 0.4rem);
+    margin: 0.3rem 0.2rem;
+    text-align: center;
+}
+
+.box img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.album-title {
+    display: block;
+    font-size: 16px;
+    color: white;
+    padding: 0.4rem;
+    margin-top: 0.5rem;
+}
+
+.small-gray-txt {
+    font-size: 13px;
+    color: var(--gray-text);
+    display: block;
+}
+
+
+
+
 
 
 
@@ -198,40 +278,13 @@ main {
     height: 100%;
 }
 
-#main-content {
-    width: calc(100% - 40px);
-    height: calc(100% - 70px);
-}
-
-#calltoaction {
-    width: 100%;
-    height: 70px;
-    background-color: var(--primary-color);
-}
-
-#home {
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    margin: auto;
-    padding: 0 1rem;
-}
 
 
 
-.home-row {
-    width: 100%; 
-}
 
-.home-row-container {
-    margin-right: -0.3rem;
-    margin-left: -0.3rem;
-}
 
-.box {
-    width: calc(100% / 2 - 0.4rem);
-    margin: 0.3rem 0.2rem;
-}
+
+
 
 
 
