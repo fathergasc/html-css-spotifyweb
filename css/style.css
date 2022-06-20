@@ -476,10 +476,14 @@ main {
     padding: 0 3px;
 }
 
-.foot-left, .foot-right {
+.foot-left {
     width: 150px;
     height: 100%;
-    background-color: #b9ff30;
+}
+
+.foot-right {
+    width: 200px;
+    height: 100%;
 }
 
 #foot-left-1 {
@@ -490,6 +494,12 @@ main {
 
 #heart-icon:hover i, #folder-icon:hover i {
     color: white;
+} 
+
+#song:hover {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .thumbnail {
@@ -501,6 +511,38 @@ main {
     width: 40%;
     height: 100%;
     background-color: #b9ff30;
+}
+
+#volume-bar {
+    height: 4px;
+    width: 100px;
+    background-color: var(--gray-text);
+    border-radius: 10px;
+}
+
+#volume-bar:hover #volume-level {
+    background-color: #b9ff30;
+}
+
+#volume-bar:hover .volume-ball {
+    display: block;
+}
+
+#volume-level {
+    height: 100%;
+    width: 30px;
+    background-color: var(--gray-light);
+    border-radius: 10px;
+    position: relative;
+}
+
+.volume-ball {
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
 }
 
 
