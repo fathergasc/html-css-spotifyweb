@@ -316,6 +316,10 @@ main {
     margin-top: 0.3rem;
 }
 
+.left-nav-bot i:hover {
+    color: white;
+}
+
 /* CALL TO ACTION */
 
 #calltoaction {
