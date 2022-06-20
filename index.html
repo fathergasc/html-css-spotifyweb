@@ -187,36 +187,50 @@
         </main>
 
         <footer id="footer">
-            <div class="foot-left flex space-between align-center">
+            <div class="foot-left flex justify-start align-center">
                 <div id="foot-left-1 flex justify-center align-center">
                     <a href="#"><img class="thumbnail" src="img/sinister.jpeg" alt=""></a>
                 </div>
-                <div id="foot-left-2">
+                <div id="foot-left-2" class="m-l">
                     <div class="font-size-13 white-txt bold">Sinister</div>
                     <div id="song" class="font-size-10 gray-txt">Brano nome</div>
                 </div>
-                <div id="foot-left-3 flex direction-column space-between">
+                <div id="foot-left-3" class="flex direction-column space-between m-l">
                     <div><a id="heart-icon" href="#"><i class="fa-regular fa-heart gray-txt"></i></a></div>
                     <div><a id="folder-icon" href="#"><i class="fa-regular fa-folder gray-txt"></i></a></div>
                 </div>
 
             </div>
-            <div class="foot-mid">
+            <div class="foot-mid flex direction-column align-center m-top">
                 <div class="foot-mid-top">
+                    <ul class="flex justify-center align-center">
+                        <a class="white-txt" href="#"><li><i class="fa-solid fa-shuffle"></i></li></a>
+                        <a class="white-txt" href="#"><li><i class="fa-solid fa-backward-step"></i></li></a>
+                        <a id="play-button" class="white-txt" href="#"><li><i class="fa-regular fa-circle-play font-size-25"></i></li></a>
+                        <a class="white-txt" href="#"><li><i class="fa-solid fa-forward-step"></i></li></a>
+                        <a class="white-txt" href="#"><li><i class="fa-solid fa-repeat"></i></li></a>
+                    </ul>
 
                 </div>
-                <div class="foot-mid-bot">
-
+                <div class="foot-mid-bot flex space-between align-center">
+                    <div class="white-txt font-size-10">0:25</div>
+                    <div id="song-bar">
+                        <div id="song-progress" class="flex justify-end align-center">
+                            <span class="progress-ball none"></span>
+                         </div>
+                    </div>
+                    
+                    <div class="white-txt font-size-10">4:35</div>
                 </div>
 
             </div>
             <div class="foot-right flex space-between align-center">
-                <div><a href="#"><i class="fa-solid fa-list white-txt"></i></a></div>
-                <div><a href="#"><i class="fa-solid fa-desktop white-txt"></i></a></div>
-                <div><a href="#"><i class="fa-solid fa-volume-high white-txt"></i></a></div>
+                <div><a href="#"><i class="fa-solid fa-list white-txt font-size-10"></i></a></div>
+                <div><a href="#"><i class="fa-solid fa-desktop white-txt font-size-10"></i></a></div>
+                <div><a href="#"><i class="fa-solid fa-volume-high white-txt font-size-10"></i></a></div>
                 <div id="volume-bar">
                     <div id="volume-level" class="flex justify-end align-center">
-                        <span class="volume-ball none"></span>
+                        <span class="progress-ball none"></span>
                     </div>
                 </div>
             </div>
