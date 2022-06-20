@@ -286,7 +286,7 @@ main {
 }
 
 .playlist {
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .playlist:hover a {
@@ -490,7 +490,10 @@ main {
 #foot-left-1 {
     height: 100%;
     width: 10%;
-    background-color: rebeccapurple;
+}
+
+#foot-left-2 {
+    margin: 1rem;
 }
 
 #heart-icon:hover i, #folder-icon:hover i {
