@@ -156,12 +156,32 @@ ul {
     font-size: 25px;
 }
 
+.font-size-20 {
+    font-size: 20px;
+}
+
+.font-size-13 {
+    font-size: 13px;
+}
+
+.font-size-10 {
+    font-size: 10px;
+}
+
 .m-l {
     margin-left: 0.5rem;
 }
 
 .m-top {
     margin-top: 0.7rem;
+} 
+
+.m-top-0-5 {
+    margin-top: 0.5rem;
+}
+
+.m-r {
+    margin-right: 0.5rem;
 }
 
 /* MAIN */
@@ -187,7 +207,10 @@ main {
     position: relative;
     padding: 0.3rem;
     background-color: var(--primary-color);
-    overflow: hidden;
+}
+
+.left-nav-big-container {
+    height: calc(100% - 60px);
 }
 
 .logo-nav {
@@ -259,7 +282,6 @@ main {
 }
 
 .playlists-container {
-    overflow-y: scroll;
     max-height: 200px;
 }
 
@@ -274,13 +296,24 @@ main {
 .left-nav-bot {
     width: 100%;
     height: 60px;
-    position: absolute;
-    bottom: 0;
     background-color: var(--primary-color);
-    margin-left: -1rem;
-    margin-right: -0.3rem;
-    background-color: blue;
-    z-index: 1;
+}
+
+.left-nav-bot-up {
+    border-bottom: 1px solid var(--gray-text);
+    padding-bottom: 0.7rem;
+}
+
+.left-nav-bot-up:hover i, .left-nav-bot-up:hover span {
+    color: white;
+}
+
+.left-nav-bot-txt.white-txt.font-size-13 {
+    padding-top: 5px;
+}
+
+.left-nav-bot i {
+    margin-top: 0.3rem;
 }
 
 /* CALL TO ACTION */
@@ -461,6 +494,7 @@ main {
 
     #left-nav {
         padding-left: 1rem; 
+        padding-bottom: 0;
     }
 
     #small-logo {
@@ -493,6 +527,15 @@ main {
 
     .left-nav-playlists {
         display: block;
+    }
+
+    .left-nav-bot-txt {
+        display: block;
+    }
+
+    .left-nav-bot-up, .left-nav-bot-down {
+        justify-content: flex-start;
+        align-items: center;
     }
 }
 
