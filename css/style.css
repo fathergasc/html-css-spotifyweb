@@ -465,25 +465,44 @@ main {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* FOOTER */
 
 #footer {
     position: relative;
     height: 70px;
     z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3px;
 }
+
+.foot-left, .foot-right {
+    width: 150px;
+    height: 100%;
+    background-color: #b9ff30;
+}
+
+#foot-left-1 {
+    height: 100%;
+    width: 50px;
+    background-color: rebeccapurple;
+}
+
+#heart-icon:hover i, #folder-icon:hover i {
+    color: white;
+}
+
+.thumbnail {
+    height: 40px;
+    width: 40px;
+}
+
+.foot-mid {
+    width: 40%;
+    height: 100%;
+    background-color: #b9ff30;
+}
+
 
 
 
