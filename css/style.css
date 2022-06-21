@@ -229,6 +229,7 @@ main {
 
 .left-nav-top {
     text-align: center;
+    padding-top: 0.4rem;
 }
 
 .left-nav-top li img {
@@ -241,9 +242,8 @@ main {
 
 .txt-nav-top {
     display: none;
-    padding-left: 0.3rem;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 11px;
     color: var(--gray-text);
 }
 
@@ -285,6 +285,11 @@ main {
     overflow: auto;
 }
 
+.playlists-container div {
+    font-size: 11px;
+    padding-top: 1rem;
+}
+
 .playlist {
     font-size: 13px;
 }
@@ -301,7 +306,7 @@ main {
 
 .left-nav-bot-up {
     border-bottom: 1px solid var(--gray-text);
-    padding-bottom: 0.7rem;
+    padding-bottom: 0.4rem;
 }
 
 .left-nav-bot-up:hover i, .left-nav-bot-up:hover span {
@@ -313,7 +318,7 @@ main {
 }
 
 .left-nav-bot i {
-    margin-top: 0.3rem;
+    margin-top: 0.5rem;
 }
 
 .left-nav-bot i:hover {
@@ -602,9 +607,17 @@ main {
         width: 230px;
     }
 
-    #left-nav {
-        padding-left: 1rem; 
-        padding-bottom: 0;
+    #left-nav { 
+        padding: 0;
+    }
+
+    #big-logo, .left-nav-top li {
+        padding-left: 13px;
+    }
+
+    #active {
+        padding-left: 10px;
+        border-left: 3px solid #b9ff30;
     }
 
     #small-logo {
@@ -637,6 +650,7 @@ main {
 
     .left-nav-playlists {
         display: flex;
+        padding-left: 13px;
     }
 
     .left-nav-bot-txt {
@@ -646,6 +660,14 @@ main {
     .left-nav-bot-up, .left-nav-bot-down {
         justify-content: flex-start;
         align-items: center;
+    }
+
+    .left-nav-bot-up {
+        padding-left: 13px;
+    }
+
+    .left-nav-bot-down {
+        padding-left: 12px;
     }
 
     .foot-left, .foot-right {
@@ -669,6 +691,7 @@ main {
     
     .box {
         width: calc(100% / 4 - 0.4rem);
+        padding: 0 0.3rem;
     }
 }
 
