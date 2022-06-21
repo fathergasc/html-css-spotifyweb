@@ -201,12 +201,14 @@ main {
 #left-nav {
     width: 40px;
     height: 100%;
-    min-height: 400px;
+    min-height: 450px;
     display: flex;
     flex-direction: column;
     position: relative;
     padding: 0.3rem;
     background-color: var(--primary-color);
+    overflow: hidden;
+    flex-shrink: 0;
 }
 
 .left-nav-big-container {
@@ -214,7 +216,6 @@ main {
 }
 
 .logo-nav {
-    height: 30px;
     text-align: center;
 }
 
@@ -224,11 +225,9 @@ main {
 
 .logo-nav img {
     width: 80%;
-    margin-bottom: 1rem;
 }
 
 .left-nav-top {
-    height: 80px;
     text-align: center;
 }
 
@@ -256,6 +255,7 @@ main {
 
 .left-nav-playlists {
     color: var(--gray-text);
+    overflow: hidden;
 }
 
 .left-nav-playlists-title {
@@ -282,7 +282,7 @@ main {
 }
 
 .playlists-container {
-    max-height: 200px;
+    overflow: auto;
 }
 
 .playlist {
@@ -620,7 +620,7 @@ main {
 
     .left-nav-top {
         text-align: left;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     .left-nav-top img {
