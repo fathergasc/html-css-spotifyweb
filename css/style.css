@@ -317,6 +317,10 @@ main {
     padding-top: 5px;
 }
 
+.left-nav-bot-txt.gray-txt {
+    margin-top: 4px;
+}
+
 .left-nav-bot i {
     margin-top: 0.5rem;
 }
