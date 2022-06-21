@@ -636,7 +636,7 @@ main {
     }
 
     .left-nav-playlists {
-        display: block;
+        display: flex;
     }
 
     .left-nav-bot-txt {
